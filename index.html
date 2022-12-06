@@ -3,44 +3,51 @@
     <head>
         <title>Personal Blog Website</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/a45d9f595b.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="main-nav">
-            <h1>Alexis Ortiz</h1>
-            <p>Personal blog on the OneTen Scholarship Program Scrum Sprint Challenge.</p>
-            <ul>
-                <a href="#About"><li class="nav-link">About</li></a>
-                <a href="#Posts"><li class="nav-link">Posts</li></a>
-                <a href="#Resources"><li class="nav-link">Resources</li></a>
+            <h1>Scrum Sprint of Winter 2022</h1>
+            <p>A personal blog by Alexis Ortiz on the Scrum Sprint Challenge for Udacity's OneTen Scholarship Program.</p>
+            <ul id="main-links">
+                <a href="#About"><li class="nav-link">ABOUT</li></a>
+                <a href="#Posts"><li class="nav-link">POSTS</li></a>
+                <a href="#Resources"><li class="nav-link">RESOURCES</li></a>
             </ul>
         </nav>
         <main class="content">
             <section id="About">
-                <h2>Scrum Sprint '22</h2>
-                <p>Welcome, reader! This is the personal blog of Alexis Ortiz, developed to notate the daily posts of the Udacity Scrum Sprint Challenge of Winter 2022. The purpose of the sprint was to plan, navigate, and achieve programming learning and productivity goals with accountability and due diligence for 14 straight days. My individual goals for this challenge were to:</p>
+                <nav id="social-nav">
+                    <ul id="social-icons">
+                        <li><i class="fab fa-github"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                    </ul>
+                </nav>
+                <h2 id="about-title">Welcome, reader!</h2>
+                <p id="about-intro">This is a personal blog developed to notate the daily posts of Udacity's Scrum Sprint Challenge. The sprint took place between November 25 and December 9 with the intention to help students plan, navigate, and achieve learning and productivity goals for 14 days straight. Students were expected to complete the two-week challenge with accountability and due diligence towards individual, specific goals. My goals for this challenge were to:</p>
                 <div id="goal-container">
                     <div class="goal-divs" id="goal-one">
                         <p class="goal-numbers">01</p>
-                        <button>Complete 2 lessons in "Intermediate CSS: Flexbox and Grid"</button>
+                        <p class="goals-desc">Complete 2 lessons in "Intermediate CSS: Flexbox and Grid"</p>
                     </div>
                     <div class="goal-divs" id="goal-two">
                         <p class="goal-numbers">02</p>
-                        <button>Submit project 2: Personal Blog Website</button>
+                        <p class="goals-desc">Submit project 2: Personal Blog Website</p>
                     </div>
                     <div class="goal-divs" id="goal-three">
                         <p class="goal-numbers">03</p>
-                        <button>Create the skeleton of a portfolio website</button>
+                        <p class="goals-desc">Create the skeleton of a portfolio website</p>
                     </div>
                 </div>
                 <aside id="milestone-container">
                     <h3>Milestones</h3>
-                    <p>Finished Lesson: CSS Flexbox</p>
-                    <p>Finished HTML for portfolio homepage</p>
-                    <p>Finished Lesson: CSS Grid</p>
-                    <p>Finished HTML for portfolio About page</p>
-                    <p>Finished HTML for portfolio Work page</p>
-                    <p>Finished HTML for portfolio Contact page</p>
-                    <p>Finished Project Two: Personal Blog Website</p>
+                    <p>Completed a lesson.</p>
+                    <p>Began portfolio project.</p>
+                    <p>Completed another lesson.</p>
+                    <p>Began second project.</p>
+                    <p>Met portfolio checkpoint.</p>
+                    <p>Completed second project.</p>
                     <div id="week-buttons">
                         <button>Week One</button>
                         <button>Week Two</button>
