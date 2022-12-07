@@ -7,13 +7,17 @@
     </head>
     <body>
         <nav class="main-nav">
-            <h1>Scrum Sprint of Winter 2022</h1>
-            <p>A personal blog by Alexis Ortiz on the Scrum Sprint Challenge for Udacity's OneTen Scholarship Program.</p>
+            <div id="logo">
+                <img id="logo-img" src="https://docs.google.com/drawings/d/e/2PACX-1vRJZ-srEFl3BGiJUVcxEXUXHY54_Qfr3u86T--Nhd-n3DcmUgZmJiR_I78EAncYgEF1PvzFscJKVShS/pub?w=960&h=720" alt="Scrum Sprint 2022 Logo"/>
+            </div>
             <ul id="main-links">
                 <a href="#About"><li class="nav-link">ABOUT</li></a>
                 <a href="#Posts"><li class="nav-link">POSTS</li></a>
-                <a href="#Resources"><li class="nav-link">RESOURCES</li></a>
+                <a href=""><li class="nav-link">RESOURCES</li></a>
             </ul>
+            <div id="bottom-nav-img-div">
+                <img id="lady-img" src="images/techLady.jpg" alt="An illustration of a lady standing at a computer desk."/>
+            </div>
         </nav>
         <main class="content">
             <section id="About">
@@ -24,30 +28,49 @@
                         <li><i class="fa-brands fa-twitter"></i></li>
                     </ul>
                 </nav>
-                <h2 id="about-title">Welcome, reader!</h2>
-                <p id="about-intro">This is a personal blog developed to notate the daily posts of Udacity's Scrum Sprint Challenge. The sprint took place between November 25 and December 9 with the intention to help students plan, navigate, and achieve learning and productivity goals for 14 days straight. Students were expected to complete the two-week challenge with accountability and due diligence towards individual, specific goals. My goals for this challenge were to:</p>
-                <div id="goal-container">
-                    <div class="goal-divs" id="goal-one">
-                        <p class="goal-numbers">01</p>
-                        <p class="goals-desc">Complete 2 lessons in "Intermediate CSS: Flexbox and Grid"</p>
-                    </div>
-                    <div class="goal-divs" id="goal-two">
-                        <p class="goal-numbers">02</p>
-                        <p class="goals-desc">Submit project 2: Personal Blog Website</p>
-                    </div>
-                    <div class="goal-divs" id="goal-three">
-                        <p class="goal-numbers">03</p>
-                        <p class="goals-desc">Create the skeleton of a portfolio website</p>
+                <h1 id="about-title">Hello, Reader!</h1>
+                <p id="about-intro">Welcome to the personal blog of Alexis Ortiz, developed to notate the daily posts of Udacity's Scrum Sprint Challenge. The sprint took place between November 25 and December 9 with the intention to help students plan, navigate, and achieve learning and productivity goals for 14 days straight. Students were expected to complete the two-week challenge with accountability and due diligence towards individual, specific goals.</p>
+                <div id="intro-goal-container">
+                    <h2>Objectives</h2>
+                    <div id="goal-container">
+                        <div class="goal-divs" id="goal-one">
+                            <p class="goal-numbers">01</p>
+                            <p class="goals-desc">Complete 2 lessons in "Intermediate CSS: Flexbox and Grid"</p>
+                        </div>
+                        <div class="goal-divs" id="goal-two">
+                            <p class="goal-numbers">02</p>
+                            <p class="goals-desc">Submit project 2: Personal Blog Website</p>
+                        </div>
+                        <div class="goal-divs" id="goal-three">
+                            <p class="goal-numbers">03</p>
+                            <p class="goals-desc">Create the skeleton of a portfolio website</p>
+                        </div>
                     </div>
                 </div>
+                <aside id="quick-nav">
+                    <form id="search">
+                        <input type="text" placeholder="Search" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <div id="top-posts-div">
+                        <h3>Top Posts</h3>
+                        <ul id="top-posts">
+                            <li><i class="fa-solid fa-arrow-right"></i> Day One</li>
+                            <li><i class="fa-solid fa-arrow-right"></i> Day One</li>
+                            <li><i class="fa-solid fa-arrow-right"></i> Day One</li>
+                        </ul>
+                    </div>
+                </aside>
                 <aside id="milestone-container">
                     <h3>Milestones</h3>
-                    <p>Completed a lesson.</p>
-                    <p>Began portfolio project.</p>
-                    <p>Completed another lesson.</p>
-                    <p>Began second project.</p>
-                    <p>Met portfolio checkpoint.</p>
-                    <p>Completed second project.</p>
+                        <ul id="milestones">
+                            <li>Lesson Completed<span>11/25</span></li>
+                            <li>Project Started<span>11/25</span></li>
+                            <li>Lesson Completed<span>11/25</span></li>
+                            <li>Project Started<span>11/25</span></li>
+                            <li>Project Checkpoint<span>11/25</span></li>
+                            <li>Project Completed<span>11/25</span></li>
+                        </ul>
                     <div id="week-buttons">
                         <button>Week One</button>
                         <button>Week Two</button>
@@ -56,22 +79,22 @@
             </section>
             <section id="Posts">
                 <div id="week-one">
-                    <div id="day-1" class="card"></div>
-                    <div id="day-2" class="card"></div>
-                    <div id="day-3" class="card"></div>
-                    <div id="day-4" class="card"></div>
-                    <div id="day-5" class="card"></div>
-                    <div id="day-6" class="card"></div>
-                    <div id="day-7" class="card"></div>
+                    <div id="day-1" class="card">1</div>
+                    <div id="day-2" class="card">2</div>
+                    <div id="day-3" class="card">3</div>
+                    <div id="day-4" class="card">4</div>
+                    <div id="day-5" class="card">5</div>
+                    <div id="day-6" class="card">6</div>
+                    <div id="day-7" class="card">7</div>
                 </div>
                 <div id="week-two">
-                    <div id="day-8" class="card"></div>
-                    <div id="day-9" class="card"></div>
-                    <div id="day-10" class="card"></div>
-                    <div id="day-11" class="card"></div>
-                    <div id="day-12" class="card"></div>
-                    <div id="day-13" class="card"></div>
-                    <div id="day-14" class="card"></div>
+                    <div id="day-8" class="card">8</div>
+                    <div id="day-9" class="card">9</div>
+                    <div id="day-10" class="card">10</div>
+                    <div id="day-11" class="card">11</div>
+                    <div id="day-12" class="card">12</div>
+                    <div id="day-13" class="card">13</div>
+                    <div id="day-14" class="card">14</div>
                 </div>
             </section>
         </main>
