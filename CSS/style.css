@@ -105,6 +105,7 @@ body {
     padding: 0.5rem;
     font-size: 2.4rem;
     color: #6D2D3B;
+    cursor: not-allowed;
 }
 
 /* ABOUT TITLE / h1 */
@@ -213,7 +214,7 @@ body {
 /* ----  END OF ABOUT SECTION  ---- */ 
 /* ----  QUICK NAV CONTAINER  ---- */ 
 #quick-nav {
-    grid-area: 2 / 5 / 4 / 6;
+    grid-area: 2 / 5 / 3 / 6;
 }
 
 /* SEARCH FORM */
@@ -240,6 +241,7 @@ body {
 #search button {
     background-color: #6D2D3B;
     color: #F0E8EA;
+    cursor: pointer;
 }
 
 /* ----  END OF QUICK NAV  ---- */ 
@@ -290,7 +292,7 @@ body {
     padding: 0.8rem 0;
 }
 
-/* MILESTONE BUTTONS */
+/* MILESTONE / WEEK BUTTONS */
 #week-buttons button {
     background-color: #6D2D3B;
     color: #F0E8EA;
@@ -299,6 +301,7 @@ body {
     border-radius: 0;
     padding: 8px;
     border: 2px solid #fff;
+    cursor: pointer;
 }
 /* ----  END OF ASIDE CONTAINERS  ---- */
 /* ----  POSTS SECTION  ---- */ 
@@ -314,33 +317,42 @@ body {
 #week-one {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 4px;
-    grid-row-gap: 4px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 /* WEEK TWO'S POSTS CARDS */ 
 #week-two {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 4px;
-    grid-row-gap: 4px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 /* ALL POSTS CARDS */ 
 .card {
     border-radius: 0.8rem;
     border: 2px solid #863647;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 2px #DCC6CB;
 }
 
 /* POST CARDS TITLES */
 .card-title {
     color: #6D2D3B;
+    order: 2;
+}
+
+/* POST CARDS DESCRIPTIONS */
+.card-desc {
+    order: 2;
 }
 
 /* POST CARDS IMG */
@@ -348,19 +360,22 @@ body {
     width: 100%;
     object-fit: fill;
     overflow: hidden;
-    max-width: 124px;
-    border-radius: 1.6rem;
+    border-radius: 0.8rem;
+    border-bottom: 2px solid #863647;
 }
 
 /* POST CARDS BUTTONS */
 .card-button {
-    padding: 1rem;
     font-size: 2.2rem;
     background-color: #F0E8EA;
     color: #6D2D3B;
-    width: 50%;
+    width: 100%;
     align-self: center;
     cursor: pointer;
+    order: 3;
+    border: 0;
+    border-radius: 0.8rem;
+    border-top: 2px solid #863647;
 }
 
 /* ACCESSING EACH INDIVIDUAL CARD */ 
