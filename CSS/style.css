@@ -9,7 +9,7 @@ html {
 body {
     font-size: 1.6rem;
     background-color: #fff;
-    color: #0A0A0A;
+    color: #0a0a0ae8;
 }
 
 /* ----  SIDEBAR / MAIN NAV CONTAINER  ---- */ 
@@ -57,7 +57,7 @@ body {
     color: #fff;
 }
 
-/* ILLUSTRATED IMAGE DIV */
+/* ILLUSTRATED NAV IMAGE DIV */
 #bottom-nav-img-div {
     align-items: flex-end;
 }
@@ -83,7 +83,7 @@ body {
 #About {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 8% repeat(5, 1fr);
+    grid-template-rows: 8% 34% repeat(5, 1fr);
 }
 
 /* SOCIAL ICONS SECTION */
@@ -105,49 +105,69 @@ body {
     padding: 0.5rem;
     font-size: 2.4rem;
     color: #6D2D3B;
-    
 }
 
 /* ABOUT TITLE / h1 */
 #about-title {
-    grid-area: 2 / 1 / 3 / 5;
+    grid-area: 2 / 1 / 2 / 5;
     padding: 1rem;
     font-size: 4rem;
     color: #863647; 
     text-align: center;
-    margin-top: -1rem;
 }
 
 /* ABOUT / INTRO DESCRIPTION */
 #about-intro {
-    grid-area: 3 / 1 / 4 / 5;
-    padding: 1rem;
-    font-size: 2rem;
-    margin-top: -4rem;
+    font-size: 2.1rem;
 }
 
-/* GOALS / OBJECTIVES CONTAINER */ 
-#intro-goal-container {
-    grid-area: 3 / 1 / 7 / 5;
-    display: grid;
+.underline {
+     text-decoration: underline;
+     text-decoration-color: #6D2D3B;
+}
+
+/* ABOUT / INTRO DESCRIPTION + IMG */
+#about-intro-img-div {
+    grid-area: 2 / 1 / 4 / 5;
+    display: flex;
+    padding: 0 1rem;
     align-items: center;
 }
 
-/* GOALS TITLE */
-#intro-goal-container h2 {
-    grid-area: 1 / 1 / 2 / 4;
-    padding-left: 1rem;
-    color: #863647;
-    font-size: 3.2rem;
+/* ILLUSTRATED ABOUT IMG -- BLUSH */
+#about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 1.6rem;
+    padding: 0.5rem;
+}
+
+/* --- GOALS / OBJECTIVES CONTAINER --- */ 
+#intro-goal-container {
+    /* ABOUT GRID */
+    grid-area: 3 / 1 / 6 / 5;
+    display: grid;
+    align-items: center;
 }
 
 /* SMALLER GOALS CONTAINER FOR DIVS */ 
 #goal-container {
     padding: 1rem;
     display: grid;
+     /* GOALS GRID */
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 8px;
-    margin-top: -30rem;
+    height: 100%;
+}
+
+/* GOALS TITLE */
+#intro-goal-container-h2 {
+    grid-area: 1 / 1 / 2 / 3;
+    padding-left: 1rem;
+    color: #6D2D3B;
+    font-size: 3.2rem;
 }
 
 /* GOALS DIVS */
@@ -158,6 +178,7 @@ body {
     border-radius: 1.6rem;
     border: 2px solid #DCC6CB;
     padding: 1.6rem;
+    height: 100%;
 }
 
 /* GOALS NUMBERS */
@@ -170,7 +191,7 @@ body {
 /* GOALS DESCRIPTION */
 .goals-desc {
     font-size: 1.9rem;
-    color: #0A0A0A;
+    color: #6D2D3B;
     padding: 0.5rem;
     border-radius: 1.6rem;
     text-align: center;
@@ -223,6 +244,12 @@ body {
 
 /* ----  END OF QUICK NAV  ---- */ 
 /* ----  ASIDE CONTAINERS  ---- */ 
+
+/* TOP POSTS AND MILESTONE TITLES */
+.aside-titles {
+    font-size: 2.2rem;
+}
+
 /* TOP POSTS DIVS*/
 #top-posts-div {
     margin-top: 7rem;
@@ -238,22 +265,29 @@ body {
     padding: 0;
 }
 
-/* MILESTONES -- ASIDE */
+/* MILESTONES ASIDE CONTAINER */
 #milestone-container {
-    grid-area: 4 / 5 / 7 / 6;
+    grid-area: 3 / 5 / 7 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 2px solid #6D2D3B;
     padding: 1rem;
     border-radius: 1.6rem;
     color: #0A0A0A;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 /* MILESTONES LIST */
 #milestones {
     list-style-type: none;
     padding: 0;
+}
+
+/* MILESTONES LIST ITEMS */
+.milestones-li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
 }
 
 /* MILESTONE BUTTONS */
@@ -263,30 +297,73 @@ body {
     width: 50%;
     float: left;
     border-radius: 0;
+    padding: 8px;
     border: 2px solid #fff;
 }
 /* ----  END OF ASIDE CONTAINERS  ---- */
 /* ----  POSTS SECTION  ---- */ 
 
+/* POST SECTION TITLE */
+.post-section-h2 {
+    padding-left: 1rem;
+    color: #6D2D3B;
+    font-size: 3.2rem;
+}
+
+/* WEEK ONE'S POSTS CARDS */ 
 #week-one {
-    border: 2px solid purple;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
 }
 
+/* WEEK TWO'S POSTS CARDS */ 
 #week-two {
-    border: 2px solid yellow;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
 }
 
+/* ALL POSTS CARDS */ 
 .card {
-    
-    border: 2px solid blue;
+    border-radius: 0.8rem;
+    border: 2px solid #863647;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* POST CARDS TITLES */
+.card-title {
+    color: #6D2D3B;
+}
+
+/* POST CARDS IMG */
+.card-img {
+    width: 100%;
+    object-fit: fill;
+    overflow: hidden;
+    max-width: 124px;
+    border-radius: 1.6rem;
+}
+
+/* POST CARDS BUTTONS */
+.card-button {
+    padding: 1rem;
+    font-size: 2.2rem;
+    background-color: #F0E8EA;
+    color: #6D2D3B;
+    width: 50%;
+    align-self: center;
+    cursor: pointer;
+}
+
+/* ACCESSING EACH INDIVIDUAL CARD */ 
 #day-1 { 
     grid-area: 1 / 1 / 3 / 3; 
 }
@@ -342,6 +419,7 @@ body {
 #day-14 { 
     grid-area: 1 / 5 / 3 / 7;
 }
+/* ---- END OF POSTS CARDS ---- */ 
 
 /*  ------ MEDIA QUERIES ------ */ 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */

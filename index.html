@@ -29,21 +29,24 @@
                     </ul>
                 </nav>
                 <h1 id="about-title">Hello, Reader!</h1>
-                <p id="about-intro">Welcome to the personal blog of Alexis Ortiz, developed to notate the daily posts of Udacity's Scrum Sprint Challenge. The sprint took place between November 25 and December 9 with the intention to help students plan, navigate, and achieve learning and productivity goals for 14 days straight. Students were expected to complete the two-week challenge with accountability and due diligence towards individual, specific goals.</p>
+                <div id="about-intro-img-div">
+                    <p id="about-intro">Welcome to the personal blog of Alexis Ortiz, developed to notate the daily posts of Udacity's Scrum Sprint Challenge. The sprint took place between November 25 and December 9 with the intention to help students <u class="underline">plan, navigate, and achieve learning and productivity goals</u> for 14 days straight. Students were expected to complete the two-week challenge with accountability and due diligence towards individual, specific goals.</p>
+                    <img src="images/illustratedInterface.png" alt="Illustration of a interface with a mouse on the screen." id="about-img">
+                </div>
                 <div id="intro-goal-container">
-                    <h2>Objectives</h2>
+                    <h2 id="intro-goal-container-h2" >Objectives</h2>
                     <div id="goal-container">
                         <div class="goal-divs" id="goal-one">
                             <p class="goal-numbers">01</p>
-                            <p class="goals-desc">Complete 2 lessons in "Intermediate CSS: Flexbox and Grid"</p>
+                            <p class="goals-desc"><strong>Complete 2 lessons in "Intermediate CSS: Flexbox and Grid"</strong></p>
                         </div>
                         <div class="goal-divs" id="goal-two">
                             <p class="goal-numbers">02</p>
-                            <p class="goals-desc">Submit project 2: Personal Blog Website</p>
+                            <p class="goals-desc"><strong>Submit project 2: Personal Blog Website</strong></p>
                         </div>
                         <div class="goal-divs" id="goal-three">
                             <p class="goal-numbers">03</p>
-                            <p class="goals-desc">Create the skeleton of a portfolio website</p>
+                            <p class="goals-desc"><strong>Create the skeleton of a portfolio website</strong></p>
                         </div>
                     </div>
                 </div>
@@ -53,23 +56,24 @@
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                     <div id="top-posts-div">
-                        <h3>Top Posts</h3>
+                        <h3 class="aside-titles">Top Posts</h3>
                         <ul id="top-posts">
-                            <li><i class="fa-solid fa-arrow-right"></i> Day One</li>
-                            <li><i class="fa-solid fa-arrow-right"></i> Day One</li>
-                            <li><i class="fa-solid fa-arrow-right"></i> Day One</li>
+                            <li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day One</li>
+                            <li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day One</li>
+                            <li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day One</li>
                         </ul>
                     </div>
                 </aside>
                 <aside id="milestone-container">
-                    <h3>Milestones</h3>
+                    <h3 class="aside-titles">Milestones</h3>
                         <ul id="milestones">
-                            <li>Lesson Completed<span>11/25</span></li>
-                            <li>Project Started<span>11/25</span></li>
-                            <li>Lesson Completed<span>11/25</span></li>
-                            <li>Project Started<span>11/25</span></li>
-                            <li>Project Checkpoint<span>11/25</span></li>
-                            <li>Project Completed<span>11/25</span></li>
+                            <li class="milestones-li">Challenge Begins<span>11/25</span></li>
+                            <li class="milestones-li">Lesson Completed<span>11/25</span></li>
+                            <li class="milestones-li">Project Started<span>11/25</span></li>
+                            <li class="milestones-li">Lesson Completed<span>11/25</span></li>
+                            <li class="milestones-li">Project Started<span>11/25</span></li>
+                            <li class="milestones-li">Project Checkpoint<span>11/25</span></li>
+                            <li class="milestones-li">Project Completed<span>11/25</span></li>
                         </ul>
                     <div id="week-buttons">
                         <button>Week One</button>
@@ -78,23 +82,82 @@
                 </aside>
             </section>
             <section id="Posts">
+                <h2 class="post-section-h2">WEEK ONE</h2>
                 <div id="week-one">
-                    <div id="day-1" class="card">1</div>
-                    <div id="day-2" class="card">2</div>
-                    <div id="day-3" class="card">3</div>
-                    <div id="day-4" class="card">4</div>
-                    <div id="day-5" class="card">5</div>
-                    <div id="day-6" class="card">6</div>
-                    <div id="day-7" class="card">7</div>
+                    <div id="day-1" class="card">
+                        <h1 class="card-title">DAY 1</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=P3V_h1IhK&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-2" class="card">
+                        <h1 class="card-title">DAY 2</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=FIJ8T1bcz&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-3" class="card">
+                        <h1 class="card-title">DAY 3</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=LH7pHg55n&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-4" class="card">
+                        <h1 class="card-title">DAY 4</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=DpuhzYvBq&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-5" class="card">
+                        <h1 class="card-title">DAY 5</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=BsUfUs2qg&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-6" class="card">
+                        <h1 class="card-title">DAY 6</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=UJ9EMrhS7&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-7" class="card">
+                        <h1 class="card-title">DAY 7</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=HShlN0Up1&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
                 </div>
+                <br>
+                <h2 class="post-section-h2">WEEK TWO</h2>
                 <div id="week-two">
-                    <div id="day-8" class="card">8</div>
-                    <div id="day-9" class="card">9</div>
-                    <div id="day-10" class="card">10</div>
-                    <div id="day-11" class="card">11</div>
-                    <div id="day-12" class="card">12</div>
-                    <div id="day-13" class="card">13</div>
-                    <div id="day-14" class="card">14</div>
+                    <div id="day-8" class="card">
+                        <h1 class="card-title">DAY 8</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=FXLhsvs4ES&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-9" class="card">
+                        <h1 class="card-title">DAY 9</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=kJTUYQFtl&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-10" class="card">
+                        <h1 class="card-title">DAY 10</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=HYzmr7wWS&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-11" class="card">
+                        <h1 class="card-title">DAY 11</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=7i28olvzX&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-12" class="card">
+                        <h1 class="card-title">DAY 12</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=aVDP-XbSJ&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-13" class="card">
+                        <h1 class="card-title">DAY 13</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=jfO3_vOJgr&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
+                    <div id="day-14" class="card">
+                        <h1 class="card-title">DAY 14</h1>
+                        <img class="card-img" src="https://blush.design/api/download?shareUri=VZwPd1CMq&w=800&h=800&fm=png">
+                        <button class="card-button"><strong>READ</strong></button>
+                    </div>
                 </div>
             </section>
         </main>
