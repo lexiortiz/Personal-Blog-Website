@@ -80,15 +80,8 @@ body {
 }
 
 /* ----  ABOUT SECTION  ---- */
-#About {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 8% 34% repeat(5, 1fr);
-}
-
 /* SOCIAL ICONS SECTION */
 #social-nav {
-    grid-area: 1 / 5 / 2 / 6;
     align-self: center;
 }
 
@@ -110,7 +103,6 @@ body {
 
 /* ABOUT TITLE / h1 */
 #about-title {
-    grid-area: 2 / 1 / 2 / 5;
     padding: 1rem;
     font-size: 4rem;
     color: #863647; 
@@ -129,7 +121,6 @@ body {
 
 /* ABOUT / INTRO DESCRIPTION + IMG */
 #about-intro-img-div {
-    grid-area: 2 / 1 / 4 / 5;
     display: flex;
     padding: 0 1rem;
     align-items: center;
@@ -147,8 +138,6 @@ body {
 
 /* --- GOALS / OBJECTIVES CONTAINER --- */ 
 #intro-goal-container {
-    /* ABOUT GRID */
-    grid-area: 3 / 1 / 6 / 5;
     display: grid;
     align-items: center;
 }
@@ -211,12 +200,9 @@ body {
 }
 
 /* ----  END OF GOALS  ---- */ 
-/* ----  END OF ABOUT SECTION  ---- */ 
-/* ----  QUICK NAV CONTAINER  ---- */ 
-#quick-nav {
-    grid-area: 2 / 5 / 3 / 6;
-}
+/* ----  END OF ABOUT SECTION  ---- */
 
+/* ----  QUICK NAV CONTAINER  ---- */ 
 /* SEARCH FORM */
 #search {
     display: flex;
@@ -269,7 +255,6 @@ body {
 
 /* MILESTONES ASIDE CONTAINER */
 #milestone-container {
-    grid-area: 3 / 5 / 7 / 6;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -434,64 +419,139 @@ body {
 #day-14 { 
     grid-area: 1 / 5 / 3 / 7;
 }
-/* ---- END OF POSTS CARDS ---- */ 
 
-/*  ------ MEDIA QUERIES ------ */ 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* ---- END OF POSTS CARDS ---- */ 
+/*  ------ ALL MEDIA QUERIES ------ */
+
+/* ----  MEDIA QUERIES FOR SMALL SCREENS / MOBILE ---- */
 @media (max-width: 599px) {
+    /* MAIN NAV CONTAINER */
     .main-nav {
         width: 100%;
         height: auto;
         position: relative;
     }
+
+    /* MAIN NAV LINKS */
     #main-links {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    /* ALL PAGE CONTENT */
     .content {
         margin-left: 0;
     }
 
+    /* ABOUT / INTRO DESCRIPTION + IMG */
+    #about-intro-img-div {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /* ILLUSTRATED ABOUT IMG */
+    #about-img {
+        display: none;
+    }
+
+    /* SEARCH FORM */
+    #search {
+        display: none;
+    }
+
+    /* SMALLER GOALS CONTAINER FOR DIVS */ 
+    #goal-container {
+        display: flex;
+        margin: auto;
+    }
+
+    /* MILESTONES ASIDE CONTAINER */
+    #milestone-container {
+        margin-top: 2.4rem;
+    }
+
+    /* WEEK ONE'S POSTS CARDS */ 
+    #week-one {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* WEEK TWO'S POSTS CARDS */ 
+    #week-two {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* ----  MEDIA QUERIES FOR MEDIUM SCREENS / TABLETS ---- */
+@media (min-width: 600px) and (max-width: 900px) {
+    /* MAIN NAV CONTAINER */
+    .main-nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    /* MAIN NAV LINKS */
+    #main-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ALL PAGE CONTENT */
+    .content {
+        margin-left: 0;
+    }
+
+    /* SEARCH FORM */
+    #search {
+        display: none;
+    }
+
+    /* MILESTONES ASIDE CONTAINER */
+    #milestone-container {
+        margin-top: 3rem;
+    }
+}
+
+/* ----  MEDIA QUERIES FOR LARGE SCREENS / DESKTOPS ---- */
+@media (min-width: 901px) {
+    /* ABOUT SECTION */
     #About {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 6% 12% repeat(4, 1fr);
+        grid-template-rows: 8% 34% repeat(5, 1fr);
     }
 
+    /* SOCIAL ICONS SECTION */
     #social-nav {
         grid-area: 1 / 5 / 2 / 6;
     }
 
+    /* ABOUT TITLE / h1 */
     #about-title {
-        grid-area: 2 / 1 / 3 / 6;
+        grid-area: 2 / 1 / 2 / 5;
     }
 
-    #about-intro {
-        grid-area: 3 / 1 / 4 / 6;
+    /* ABOUT / INTRO DESCRIPTION + IMG */
+    #about-intro-img-div {
+        grid-area: 2 / 1 / 4 / 5;
     }
 
-    #goal-container {
-        grid-area: 4 / 1 / 6 / 6;
+    /* GOALS / OBJECTIVES CONTAINER */
+    #intro-goal-container {
+        grid-area: 3 / 1 / 6 / 5;
     }
 
+    /* QUICK NAV CONTAINER */
+    #quick-nav {
+        grid-area: 2 / 5 / 3 / 6;
+    }
+
+    /* MILESTONES ASIDE CONTAINER */
     #milestone-container {
-        border: 3px solid #F0E8EA;
-        grid-area: 6 / 1 / 7 / 6;
- }
-
-@media (min-width: 600px) and (max-width: 900px) {
-    .main-nav {
-        width: 100%;
-        height: auto;
-        position: relative;
+        grid-area: 3 / 5 / 7 / 6;
     }
-    #main-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .content {
-        margin-left: 0;
-    }
- }
+}
