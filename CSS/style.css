@@ -79,6 +79,14 @@ body {
     margin-left: 200px;
 }
 
+.text-italic {
+    font-style: italic;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
 /* ----  ABOUT SECTION  ---- */
 /* SOCIAL ICONS SECTION */
 #social-nav {
@@ -421,8 +429,20 @@ body {
 }
 
 /* ---- END OF POSTS CARDS ---- */ 
-/*  ------ ALL MEDIA QUERIES ------ */
 
+/* ---- FOOTER ---- */
+#website-footer {
+    background-color: #DCC6CB;
+    padding: 3rem;
+    text-align: center;
+    color: #6D2D3B;
+    margin-top: 2rem;
+    border: 8px solid #F0E8EA;
+    font-size: 1.6rem;
+}
+/* ---- END OF FOOTER ---- */
+
+/*  ------ ALL MEDIA QUERIES ------ */
 /* ----  MEDIA QUERIES FOR SMALL SCREENS / MOBILE ---- */
 @media (max-width: 599px) {
     /* MAIN NAV CONTAINER */
@@ -553,5 +573,10 @@ body {
     /* MILESTONES ASIDE CONTAINER */
     #milestone-container {
         grid-area: 3 / 5 / 7 / 6;
+    }
+
+    /* ---- FOOTER ---- */
+    #website-footer {
+        margin-left: 200px;
     }
 }
