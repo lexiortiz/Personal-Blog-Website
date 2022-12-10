@@ -1,11 +1,12 @@
-/* CSS FILE FOR MAIN PAGE */
+/* CSS FOR MAIN PAGE */
 
-
+/* ACCESSING ALL HTML FOR FONT ACCESSIBILITY */
 html {
     /* Responsive, accessible font sizing. */
     font-size: 62.5%;
 }
 
+/* STYLING ALL OF BODY */
 body {
     font-size: 1.6rem;
     background-color: #fff;
@@ -312,7 +313,7 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -322,7 +323,7 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
 }
 

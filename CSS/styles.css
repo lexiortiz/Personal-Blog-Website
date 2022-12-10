@@ -1,51 +1,133 @@
+
+/* CSS FOR ALL BLOG POST PAGES */
+
+/* ACCESSING ALL HTML FOR FONT ACCESSIBILITY */
+html {
+    /* Responsive, accessible font sizing. */
+    font-size: 62.5%;
+}
+
+/* STYLING ALL OF BODY */
+body {
+    font-size: 1.6rem;
+    background-color: #fff;
+    color: #0a0a0ae8;
+}
+
+/* ALL OF THE ARTICLE / POST */
 .article-container {
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
-    grid-template-rows: 10% 1fr 8% 2fr 8%;
+    grid-template-columns: 1fr 0.85fr;
+    grid-template-rows: 16% 1fr 1% 2fr 1%;
+    align-items: center;
+    background-color: #FBF8F9;
+    padding: 1rem;
+    border: 0.5rem solid #DCC6CB;
 }
 
+/* POST TITLE */
 .post-title {
     grid-area: 1 / 1 / 2 / 3;
-    border: 2px solid red;
+    color: #6D2D3B;
+    font-size: 4rem;
+    text-align: center;
 }
 
+/* POST IMAGE */
 .post-image {
     grid-area: 2 / 1 / 3 / 2;
-    border: 2px solid red;
+    max-width: 56rem;
+    margin: auto;
 }
 
+/* POST QUOTE */
 .post-quote {
     grid-area: 2 / 2 / 3 / 3;
-    border: 2px solid red;
+    padding: 1rem;
+    border-left: 1rem solid #DCC6CB;
+    border-radius: 2px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: bold;
 }
 
+/* POST QUOTE CITE */
+.post-quote-cite {
+    font-style: italic;
+    margin-bottom: -4px;
+}
+
+/* POST DATE */
 .post-date {
     grid-area: 3 / 1 / 4 / 3;
-    border: 2px solid red;
+    color: #6D2D3B;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3.2rem;
 }
 
+/* ALL POST COPY / TEXT */
 .post {
     grid-area: 4 / 1 / 5 / 3;
-    border: 2px solid red;
+    padding: 3rem;
+    font-size: 2.1rem;
 }
 
+/* COPY DESCRIPTION TITLE / TODAY */
 .post-desc-title-1 {
-
+    color: #6D2D3B;
+    font-size: 3rem;
 }
 
+/* COPY DESCRIPTION FOR TODAY */
 .post-desc-1 {
-
+    text-align: center;
 }
 
+/* COPY DESCRIPTION TITLE / TOMORROW */
 .post-desc-title-2 {
-    
+    color: #6D2D3B;
+    font-size: 3rem;
 }
 
+/* COPY DESCRIPTION FOR TOMORROW */
 .post-desc-2 {
-
+    text-align: center;
 }
 
+/* NEXT BUTTON */
 .next-button {
-    grid-area: 5 / 2 / 6 / 3;
-    border: 2px solid red;
+    grid-area: 5 / 1 / 6 / 3;
+    color: #6D2D3B;
+    display: flex;
+    justify-content: center;
+}
+
+/* ICON FOR NEXT BUTTON */
+.fa-arrow-right {
+    align-items: center;
+    border: 0.5rem solid #DCC6CB;
+    border-radius: 50%;
+    padding: 1rem;
+    color: #6D2D3B;
+    font-size: 1.9rem;
+}
+
+/* ICON FOR NEXT BUTTON ON HOVER */
+.fa-arrow-right:hover {
+    background-color: #DCC6CB;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* FOOTER */
+.post-footer {
+    background-color: #DCC6CB;
+    padding: 1rem;
+    text-align: center;
+    color: #6D2D3B;
+    margin-top: 1rem;
+    border: 0.5rem solid #DCC6CB;
+    font-size: 1.9rem;
 }
