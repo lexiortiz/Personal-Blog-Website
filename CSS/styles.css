@@ -14,6 +14,55 @@ body {
     color: #0a0a0ae8;
 }
 
+/* HEADER */
+.post-header {
+    font-size: 1.9rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HEADER TITLE */
+.header-title {
+    font-size: 3rem;
+    margin: 0;
+    color: #6D2D3B;
+}
+
+/* HEADER NAV LIST */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    color: #6D2D3B;
+}
+
+/* HEADER NAV LIST ITEMS */
+.nav-list-items {
+    padding: 1rem;
+    border: 4px solid #DCC6CB;
+    margin: 0 0.5rem;
+}
+
+/* HEADER NAV LIST ITEMS ON HOVER */
+.nav-list-items:hover {
+    border: 4px solid #6D2D3B;
+    cursor: pointer;
+}
+
+/* NAV LINKS */
+.nav-links {
+    text-decoration: none;
+    color: #6D2D3B;
+}
+
+/* NAV LINKS ON HOVER */
+.nav-links:hover {
+    cursor: pointer;
+}
+
+
 /* ALL OF THE ARTICLE / POST */
 .article-container {
     display: grid;
@@ -31,6 +80,7 @@ body {
     color: #6D2D3B;
     font-size: 4rem;
     text-align: center;
+    align-items: center;
 }
 
 /* POST IMAGE */
@@ -96,6 +146,17 @@ body {
     text-align: center;
 }
 
+/* COPY LINKS */
+.post-links {
+    text-decoration: none;
+    color: #6D2D3B;
+}
+
+/* COPY LINKS ON HOVER */
+.post-links:hover {
+    font-weight: bold;
+}
+
 /* NEXT BUTTON */
 .next-button {
     grid-area: 5 / 1 / 6 / 3;
@@ -119,6 +180,60 @@ body {
     background-color: #DCC6CB;
     cursor: pointer;
     color: #fff;
+}
+
+/* AUTHOR INFO CONTAINER */
+.author-info {
+    border: 0.5rem solid #DCC6CB;
+    color: #6D2D3B;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* AUTHOR IMG */
+.avatar-img {
+    max-width: 124px;
+    border-radius: 50%;
+}
+
+/* AUTHOR TITLE */
+.author-title {
+    padding-top: 24px;
+    margin: 0;
+}
+
+/* AUTHOR SCHOOL */
+.author-school {
+    padding: 0 8rem;
+    margin: 0;
+}
+
+/* AUTHOR BIO */
+.author-bio {
+    padding: 3rem;
+    font-size: 2.1rem;
+}
+
+/* AUTHOR SOCIAL MEDIA LIST */
+.author-socials-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 0 8rem;
+    margin: 0;
+    align-items: center;
+}
+
+/* AUTHOR SOCIAL MEDIA LIST ITEMS */
+.socials-list-items {
+    padding: 0.5rem;
+}
+
+/* AUTHOR SOCIAL MEDIA LIST ITEMS ON HOVER */
+.socials-list-items:hover {
+    color: #DCC6CB;
+    cursor: not-allowed;
 }
 
 /* FOOTER */
