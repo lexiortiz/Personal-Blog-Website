@@ -36,15 +36,16 @@ body {
     overflow: hidden;
     max-width: 172px;
 }
+
 /* SIDEBAR LIST */
-.main-nav ul {
+.main-nav #main-links {
     padding: 0;
     width: 100%;
     text-align: center;
 }
 
 /* SIDEBAR LINKS */
-.main-nav a {
+ .nav-link {
     display: block;
     color: #6D2D3B;
     text-decoration: none;
@@ -53,7 +54,7 @@ body {
 }
 
 /* LINKS ON HOVER */
-.main-nav a:hover {
+.nav-link:hover {
     background-color: #6D2D3B;
     color: #fff;
 }
@@ -80,10 +81,12 @@ body {
     margin-left: 200px;
 }
 
+/* TARGETING TEXT THAT SHOULD BE ITALIC */
 .text-italic {
     font-style: italic;
 }
 
+/* TARGETING TEXT THAT SHOULD BE BOLD */
 .text-bold {
     font-weight: bold;
 }
@@ -102,7 +105,7 @@ body {
 }
 
 /* SOCIAL ICONS LIST ITEMS */
-#social-icons li {
+.social-icons-list-item {
     list-style-type: none;
     padding: 0.5rem;
     font-size: 2.4rem;
@@ -221,7 +224,7 @@ body {
 }
 
 /* SEARCH INPUTS */
-#search input, button {
+.search-inputs {
     font-size: inherit;
     font-family: inherit;
     border-radius: 0.8rem;
@@ -233,7 +236,7 @@ body {
     color: #6D2D3B;
 }
 
-#search button {
+#search-button {
     background-color: #6D2D3B;
     color: #F0E8EA;
     cursor: pointer;
@@ -244,12 +247,12 @@ body {
 
 /* TOP POSTS AND MILESTONE TITLES */
 .aside-titles {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
 }
 
 /* TOP POSTS DIVS*/
 #top-posts-div {
-    margin-top: 7rem;
+    margin-top: 18px;
     border: 2px solid #6D2D3B;
     padding: 1rem;
     border-radius: 1.6rem;
@@ -262,6 +265,11 @@ body {
     padding: 0;
 }
 
+/* TOP POSTS LIST ITEMS */
+.top-posts-li {
+    padding: 4px;
+}
+
 /* MILESTONES ASIDE CONTAINER */
 #milestone-container {
     display: flex;
@@ -271,6 +279,7 @@ body {
     padding: 1rem;
     border-radius: 1.6rem;
     color: #0A0A0A;
+    margin-top: 32px;
 }
 
 /* MILESTONES LIST */
@@ -298,7 +307,7 @@ body {
 }
 
 /* MILESTONE / WEEK BUTTONS */
-#week-buttons button {
+.w-button {
     background-color: #6D2D3B;
     color: #F0E8EA;
     width: 50%;
@@ -324,8 +333,8 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-    max-width: 700px;
     margin: auto;
+    max-width: 900px;
 }
 
 /* WEEK TWO'S POSTS CARDS */ 
@@ -334,8 +343,8 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-    max-width: 700px;
     margin: auto;
+    max-width: 900px;
 }
 
 /* ALL POSTS CARDS */ 
@@ -357,11 +366,11 @@ body {
 
 /* POST CARDS DESCRIPTIONS */
 .card-desc {
-    order: 2;
     text-align: center;
     color: #6D2D3B;
     font-size: 1.8rem;
     padding: 1rem;
+    order: 3;
 }
 
 /* POST CARDS IMG */
@@ -371,6 +380,7 @@ body {
     overflow: hidden;
     border-radius: 0.4rem;
     border-bottom: 2px solid #863647;
+    order: 1;
 }
 
 /* POST CARDS BUTTONS */
@@ -379,12 +389,20 @@ body {
     background-color: #F0E8EA;
     color: #6D2D3B;
     width: 100%;
-    align-self: center;
-    cursor: pointer;
-    order: 3;
     border: 0;
     border-radius: 0.8rem;
     border-top: 2px solid #863647;
+    order: 4;
+}
+
+/* CARD BUTTON LINKS */
+.card-button-link {
+    font-size: 2.2rem;
+    width: 100%;
+    align-self: center;
+    cursor: pointer;
+    border: 0;
+    order: 4;
 }
 
 /* ACCESSING EACH INDIVIDUAL CARD */ 
@@ -459,8 +477,116 @@ body {
 /* ---- END OF FOOTER ---- */
 
 /*  ------ ALL MEDIA QUERIES ------ */
+/* ----  MEDIA QUERIES FOR LARGE SCREENS / DESKTOPS ---- */
+@media screen and (min-width: 1024px) {
+    /* ABOUT SECTION */
+    #About {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 8% 34% repeat(5, 1fr);
+    }
+
+    /* SOCIAL ICONS SECTION */
+    #social-nav {
+        grid-area: 1 / 5 / 2 / 6;
+    }
+
+    /* ABOUT TITLE / h1 */
+    #about-title {
+        grid-area: 2 / 1 / 2 / 5;
+    }
+
+    /* ABOUT / INTRO DESCRIPTION + IMG */
+    #about-intro-img-div {
+        grid-area: 2 / 1 / 4 / 5;
+    }
+
+    /* ABOUT IMG */
+    #about-img {
+        max-width: 300px;
+        min-width: 124px;
+    }
+
+    /* GOALS / OBJECTIVES CONTAINER */
+    #intro-goal-container {
+        grid-area: 3 / 1 / 6 / 5;
+    }
+
+    /* GOALS DIVS */
+    .goal-divs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* QUICK NAV CONTAINER */
+    #quick-nav {
+        grid-area: 2 / 5 / 3 / 6;
+    }
+
+    /* MILESTONES ASIDE CONTAINER */
+    #milestone-container {
+        grid-area: 3 / 5 / 7 / 6;
+    }
+
+    .post-section-h2 {
+        text-align: center;
+    }
+
+    #week-one {
+        max-width: 1400px;
+    }
+
+    #week-two {
+        max-width: 1400px;
+    }
+
+    /* ---- FOOTER ---- */
+    #website-footer {
+        margin-left: 200px;
+    }
+}
+
+/* ----  MEDIA QUERIES FOR MEDIUM SCREENS / TABLETS ---- */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* MAIN NAV CONTAINER */
+    .main-nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    /* MAIN NAV LINKS */
+    #main-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ALL PAGE CONTENT */
+    .content {
+        margin-left: 0;
+    }
+
+    /* SEARCH FORM */
+    #search {
+        display: none;
+    }
+
+    /* TOP POSTS DIV */
+    #top-posts-div {
+        margin-top: 80px;
+    }
+
+    /* MILESTONES ASIDE CONTAINER */
+    #milestone-container {
+        margin-top: 3rem;
+    }
+}
+
 /* ----  MEDIA QUERIES FOR SMALL SCREENS / MOBILE ---- */
-@media (max-width: 599px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     /* MAIN NAV CONTAINER */
     .main-nav {
         width: 100%;
@@ -498,8 +624,21 @@ body {
 
     /* SMALLER GOALS CONTAINER FOR DIVS */ 
     #goal-container {
-        display: flex;
         margin: auto;
+    }
+
+    /* GOAL DIVS */
+    .goal-divs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    /* TOP POSTS DIV */
+    #top-posts-div {
+        margin-top: 40px;
     }
 
     /* MILESTONES ASIDE CONTAINER */
@@ -511,88 +650,15 @@ body {
     #week-one {
         display: flex;
         flex-wrap: wrap;
+        margin: auto;
+        width: 100%;
     }
 
     /* WEEK TWO'S POSTS CARDS */ 
     #week-two {
         display: flex;
         flex-wrap: wrap;
-    }
-}
-
-/* ----  MEDIA QUERIES FOR MEDIUM SCREENS / TABLETS ---- */
-@media (min-width: 600px) and (max-width: 900px) {
-    /* MAIN NAV CONTAINER */
-    .main-nav {
+        margin: auto;
         width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    /* MAIN NAV LINKS */
-    #main-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* ALL PAGE CONTENT */
-    .content {
-        margin-left: 0;
-    }
-
-    /* SEARCH FORM */
-    #search {
-        display: none;
-    }
-
-    /* MILESTONES ASIDE CONTAINER */
-    #milestone-container {
-        margin-top: 3rem;
-    }
-}
-
-/* ----  MEDIA QUERIES FOR LARGE SCREENS / DESKTOPS ---- */
-@media (min-width: 901px) {
-    /* ABOUT SECTION */
-    #About {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 8% 34% repeat(5, 1fr);
-    }
-
-    /* SOCIAL ICONS SECTION */
-    #social-nav {
-        grid-area: 1 / 5 / 2 / 6;
-    }
-
-    /* ABOUT TITLE / h1 */
-    #about-title {
-        grid-area: 2 / 1 / 2 / 5;
-    }
-
-    /* ABOUT / INTRO DESCRIPTION + IMG */
-    #about-intro-img-div {
-        grid-area: 2 / 1 / 4 / 5;
-    }
-
-    /* GOALS / OBJECTIVES CONTAINER */
-    #intro-goal-container {
-        grid-area: 3 / 1 / 6 / 5;
-    }
-
-    /* QUICK NAV CONTAINER */
-    #quick-nav {
-        grid-area: 2 / 5 / 3 / 6;
-    }
-
-    /* MILESTONES ASIDE CONTAINER */
-    #milestone-container {
-        grid-area: 3 / 5 / 7 / 6;
-    }
-
-    /* ---- FOOTER ---- */
-    #website-footer {
-        margin-left: 200px;
     }
 }

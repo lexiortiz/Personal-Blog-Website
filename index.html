@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Personal Blog Website</title>
+        <title>Personal Blog Website | Scrum Sprint '22</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <script src="https://kit.fontawesome.com/a45d9f595b.js" crossorigin="anonymous"></script>
     </head>
@@ -11,9 +11,9 @@
                 <img id="logo-img" src="https://docs.google.com/drawings/d/e/2PACX-1vRJZ-srEFl3BGiJUVcxEXUXHY54_Qfr3u86T--Nhd-n3DcmUgZmJiR_I78EAncYgEF1PvzFscJKVShS/pub?w=960&h=720" alt="Scrum Sprint 2022 Logo"/>
             </div>
             <ul id="main-links">
-                <a href="#About"><li class="nav-link">ABOUT</li></a>
-                <a href="#Posts"><li class="nav-link">POSTS</li></a>
-                <a href="https://sites.google.com/udacity.com/onetenscholarship-c3/home?authuser=0"><li class="nav-link">RESOURCES</li></a>
+                <a href="#About" class="nav-link"><li class="nav-item">ABOUT</li></a>
+                <a href="#Posts" class="nav-link"><li class="nav-item">POSTS</li></a>
+                <a href="https://sites.google.com/udacity.com/onetenscholarship-c3/home?authuser=0" class="nav-link"><li class="nav-item">RESOURCES</li></a>
             </ul>
             <div id="bottom-nav-img-div">
                 <img id="lady-img" src="images/techLady.jpg" alt="An illustration of a lady standing at a computer desk."/>
@@ -23,9 +23,9 @@
             <section id="About">
                 <nav id="social-nav">
                     <ul id="social-icons">
-                        <li><i class="fab fa-github"></i></li>
-                        <li><i class="fa-brands fa-linkedin-in"></i></li>
-                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li class="social-icons-list-item"><i class="fab fa-github"></i></li>
+                        <li class="social-icons-list-item"><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li class="social-icons-list-item"><i class="fa-brands fa-twitter"></i></li>
                     </ul>
                 </nav>
                 <h1 id="about-title">Hello, Reader!</h1>
@@ -52,17 +52,16 @@
                 </div>
                 <aside id="quick-nav">
                     <form id="search">
-                        <input type="text" placeholder="Search" name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <input type="text" placeholder="Search" name="search" class="search-inputs">
+                        <button class="search-inputs" id="search-button" type="submit"><i class="fa fa-search"></i></button>
                     </form>
                     <div id="top-posts-div">
                         <h3 class="aside-titles">Top Posts</h3>
                         <ul id="top-posts">
                             <a href="/HTML/one.html" class="list-links"><li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day #1 of the Sprint Challenge <i class="fa-solid fa-laptop"></i></li></a>
-                            <li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day Three</li>
-                            <li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day Five</li>
-                            <li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day Ten</li>
-                            <li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day Fourteen</li>
+                            <a href="/HTML/two.html" class="list-links"><li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day #2 of the Sprint Challenge <i class="fa-solid fa-keyboard"></i></li></a>
+                            <a href="/HTML/three.html" class="list-links"><li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day #3 of the Sprint Challenge <i class="fa-solid fa-calendar-day"></i></li></a>
+                            <a href="/HTML/fourteen.html" class="list-links"><li class="top-posts-li"><i class="fa-solid fa-arrow-right"></i> Day #14 of the Sprint Challenge <i class="fa-solid fa-bullseye"></i></li></a>
                         </ul>
                     </div>
                 </aside>
@@ -71,15 +70,15 @@
                         <ul id="milestones">
                             <a href="/HTML/one.html" class="list-links"><li class="milestones-li">Challenge Begins<span>11/25</span></li></a>
                             <a href="/HTML/one.html" class="list-links"><li class="milestones-li">Lesson Completed<span>11/25</span></li></a>
-                            <li class="milestones-li">Project Started [Link to Day3]<span>11/27</span></li>
-                            <li class="milestones-li">Lesson Completed [Link to Day4]<span>11/28</span></li>
-                            <li class="milestones-li">Project Started [Link to Day7]<span>12/01</span></li>
-                            <li class="milestones-li">Project Checkpoint [Link to Day9]<span>12/03</span></li>
-                            <li class="milestones-li">Project Completed [Link to Day14]<span>12/12</span></li>
+                            <a href="/HTML/three.html" class="list-links"><li class="milestones-li">Project Started<span>11/27</span></li></a>
+                            <a href="/HTML/four.html" class="list-links"><li class="milestones-li">Lesson Completed<span>11/28</span></li></a>
+                            <a href="/HTML/seven.html" class="list-links"><li class="milestones-li">Project Started<span>12/01</span></li></a>
+                            <a href="/HTML/nine.html" class="list-links"><li class="milestones-li">Project Checkpoint<span>12/03</span></li></a>
+                            <a href="/HTML/fourteen.html" class="list-links"><li class="milestones-li">Project Completed<span>12/12</span></li></a>
                         </ul>
                     <div id="week-buttons">
-                        <a href="#week-one"><button>Week One</button></a>
-                        <a href="#week-two"><button>Week Two</button></a>
+                        <a href="#week-one"><button class="w-button">Week One</button></a>
+                        <a href="#week-two"><button class="w-button">Week Two</button></a>
                     </div>
                 </aside>
             </section>
@@ -88,13 +87,13 @@
                 <div id="week-one">
                     <div id="day-1" class="card">
                         <h1 class="card-title">DAY 1</h1>
-                        <p class="card-desc">I began the challenge by building out a digital wireframe of my portfolio.</p>
+                        <p class="card-desc">Began the challenge by building out a digital wireframe of my portfolio.</p>
                         <img class="card-img" src="https://images.unsplash.com/photo-1634245482394-1bcf5ccffcc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"" alt="An overhead shot of a black desk with a woman's hands drawing out a wireframe in a notebook, in front of a black computer keyboard.">
-                        <a href="/HTML/one.html"><button class="card-button"><strong>READ</strong></button></a>
+                        <a href="/HTML/one.html" class="card-button-link"><button class="card-button"><strong>READ</strong></button></a>
                     </div>
                     <div id="day-2" class="card">
                         <h1 class="card-title">DAY 2</h1>
-                        <p class="card-desc">I practiced CSS Flexbox and Grid with a mini project of an iPhone keypad.</p>
+                        <p class="card-desc">Practiced CSS Flexbox and Grid with a mini project of an iPhone keypad.</p>
                         <img class="card-img" src="/images/iphoneKeypad.png"" alt="A screenshot of an iPhone keypad replica made by Alexis Ortiz with CSS.">
                         <button class="card-button"><strong>READ</strong></button>
                     </div>
