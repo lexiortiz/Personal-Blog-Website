@@ -286,6 +286,17 @@ body {
     padding: 0.8rem 0;
 }
 
+/* MILESTONES + TOP POST LIST LINKS */
+.list-links {
+    text-decoration: none;
+    color: #6D2D3B;
+}
+
+/* MILESTONES + TOP POST LIST LINKS ON HOVER */
+.list-links:hover {
+    font-weight: bold;
+}
+
 /* MILESTONE / WEEK BUTTONS */
 #week-buttons button {
     background-color: #6D2D3B;
@@ -313,7 +324,7 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-    max-width: 900px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -323,7 +334,7 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-    max-width: 900px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -347,6 +358,10 @@ body {
 /* POST CARDS DESCRIPTIONS */
 .card-desc {
     order: 2;
+    text-align: center;
+    color: #6D2D3B;
+    font-size: 1.8rem;
+    padding: 1rem;
 }
 
 /* POST CARDS IMG */
@@ -354,7 +369,7 @@ body {
     width: 100%;
     object-fit: fill;
     overflow: hidden;
-    border-radius: 0.8rem;
+    border-radius: 0.4rem;
     border-bottom: 2px solid #863647;
 }
 
