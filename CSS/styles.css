@@ -189,8 +189,25 @@ body {
     font-size: 1.9rem;
 }
 
+/* ICON FOR HOME BUTTON */
+.fa-house-chimney {
+    align-items: center;
+    border: 0.5rem solid #DCC6CB;
+    border-radius: 50%;
+    padding: 1rem;
+    color: #6D2D3B;
+    font-size: 1.9rem;
+}
+
 /* ICON FOR NEXT BUTTON ON HOVER */
 .fa-arrow-right:hover {
+    background-color: #DCC6CB;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* ICON FOR HOME BUTTON ON HOVER */
+.fa-house-chimney:hover {
     background-color: #DCC6CB;
     cursor: pointer;
     color: #fff;
