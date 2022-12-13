@@ -350,17 +350,19 @@ body {
 /* WEEK ONE'S POSTS CARDS */ 
 #week-one {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 8px;
     grid-row-gap: 8px;
     margin: auto;
     max-width: 900px;
-}
+}   
 
 /* WEEK TWO'S POSTS CARDS */ 
 #week-two {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 8px;
     grid-row-gap: 8px;
     margin: auto;
@@ -428,7 +430,7 @@ body {
 
 /* ACCESSING EACH INDIVIDUAL CARD */ 
 #day-1 { 
-    grid-area: 1 / 1 / 3 / 3;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
 #day-2 { 
@@ -436,43 +438,43 @@ body {
 }
 
 #day-3 { 
-    grid-area: 2 / 3 / 3 / 5;
+    grid-area: 1 / 5 / 2 / 7;
 }
 
 #day-4 { 
-    grid-area: 1 / 5 / 2 / 6;
+    grid-area: 1 / 7 / 2 / 9;
 }
 
 #day-5 { 
-    grid-area: 1 / 6 / 2 / 7;
+    grid-area: 2 / 1 / 3 / 3;
 }
 
 #day-6 { 
-    grid-area: 2 / 5 / 3 / 6;
+    grid-area: 2 / 3 / 3 / 5;
 }
 
 #day-7 { 
-    grid-area: 2 / 6 / 3 / 7;
+    grid-area: 2 / 5 / 3 / 7;
  }
 
 #day-8 { 
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
 #day-9 { 
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 3 / 2 / 5;
 }
 
 #day-10 { 
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 1 / 5 / 2 / 7;
 }
 
 #day-11 { 
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 1 / 7 / 2 / 9;
 }
 
 #day-12 { 
-    grid-area: 1 / 3 / 2 / 5;
+    grid-area: 2 / 1 / 3 / 3;
 }
 
 #day-13 { 
@@ -480,7 +482,7 @@ body {
 }
 
 #day-14 { 
-    grid-area: 1 / 5 / 3 / 7;
+    grid-area: 2 / 5 / 3 / 7;
 }
 
 /* ---- END OF POSTS CARDS ---- */ 
