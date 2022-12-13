@@ -664,6 +664,11 @@ body {
     /* SMALLER GOALS CONTAINER FOR DIVS */ 
     #goal-container {
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
 
     /* GOAL DIVS */
@@ -673,6 +678,7 @@ body {
         justify-content: center;
         align-items: center;
         height: auto;
+        margin-top: 16px;
     }
 
     /* TOP POSTS DIV */
