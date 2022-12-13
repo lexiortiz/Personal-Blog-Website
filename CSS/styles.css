@@ -1,17 +1,22 @@
 
 /* CSS FOR ALL BLOG POST PAGES */
 
+/* --- CSS IMPORTS --- */
+/* FONT IMPORT - LORA AND POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+
 /* ACCESSING ALL HTML FOR FONT ACCESSIBILITY */
 html {
     /* Responsive, accessible font sizing. */
     font-size: 62.5%;
+    font-family: 'Lora', serif;
 }
 
 /* STYLING ALL OF BODY */
 body {
     font-size: 1.6rem;
     background-color: #fff;
-    color: #0a0a0ae8;
+    color: #0A0A0A;
 }
 
 /* HEADER */
@@ -89,6 +94,7 @@ body {
 
 /* POST IMAGE */
 .post-image {
+    width: 100%;
     max-width: 56rem;
 }
 
@@ -245,6 +251,16 @@ body {
     font-size: 2.1rem;
 }
 
+/* AUTHOR SOCIAL MEDIA NAV */
+.author-socials {
+    font-weight: bold;
+}
+
+/* AUTHOR SOCIAL MEDIA TITLE */
+.socials-title {
+    margin: 0;
+}
+
 /* AUTHOR SOCIAL MEDIA LIST */
 .author-socials-list {
     display: flex;
@@ -263,7 +279,7 @@ body {
 
 /* AUTHOR SOCIAL MEDIA LIST ITEMS ON HOVER */
 .socials-list-items:hover {
-    color: #DCC6CB;
+    color: #6D2D3B;
     cursor: not-allowed;
 }
 

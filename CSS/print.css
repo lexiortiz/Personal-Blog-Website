@@ -1,0 +1,78 @@
+
+/* ----  MEDIA QUERY FOR PRINT ---- */
+@media  {
+    /* MAIN NAV CONTAINER */
+    .main-nav { 
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    /* MAIN NAV LINKS */
+    #main-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ALL PAGE CONTENT */
+    .content {
+        margin-left: 0;
+    }
+
+    /* ABOUT / INTRO DESCRIPTION + IMG */
+    #about-intro-img-div {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /* ILLUSTRATED ABOUT IMG */
+    #about-img {
+        display: none;
+    }
+
+    /* SEARCH FORM */
+    #search {
+        display: none;
+    }
+
+    /* SMALLER GOALS CONTAINER FOR DIVS */ 
+    #goal-container {
+        margin: auto;
+    }
+
+    /* GOAL DIVS */
+    .goal-divs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    /* TOP POSTS DIV */
+    #top-posts-div {
+        margin-top: 40px;
+    }
+
+    /* MILESTONES ASIDE CONTAINER */
+    #milestone-container {
+        margin-top: 2.4rem;
+    }
+
+    /* WEEK ONE'S POSTS CARDS */ 
+    #week-one {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 100%;
+    }
+
+    /* WEEK TWO'S POSTS CARDS */ 
+    #week-two {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 100%;
+    }
+}

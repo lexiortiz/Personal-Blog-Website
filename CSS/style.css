@@ -1,16 +1,28 @@
-/* CSS FOR MAIN PAGE */
+/* ---- CSS FOR MAIN PAGE ---- */
+
+/* --- CSS IMPORTS --- */
+/* MEDIA QUERY FOR PRINT */
+@import url("./print.css") print;
+
+/* FONT IMPORT - LORA AND POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+
+/* MATERIAL ICON OF A WAVING HAND */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+/* --- END OF CSS IMPORTS --- */
 
 /* ACCESSING ALL HTML FOR FONT ACCESSIBILITY */
 html {
     /* Responsive, accessible font sizing. */
     font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* STYLING ALL OF BODY */
 body {
     font-size: 1.6rem;
     background-color: #fff;
-    color: #0a0a0ae8;
+    color: #0A0A0A;
 }
 
 /* ----  SIDEBAR / MAIN NAV CONTAINER  ---- */ 
@@ -42,15 +54,15 @@ body {
     padding: 0;
     width: 100%;
     text-align: center;
+    list-style-type: none;
 }
 
 /* SIDEBAR LINKS */
  .nav-link {
     display: block;
     color: #6D2D3B;
-    text-decoration: none;
-    list-style-type: none;
     padding: 1rem;
+    text-decoration: none;
 }
 
 /* LINKS ON HOVER */
@@ -75,10 +87,15 @@ body {
     padding: 0.5rem;
 }
 /* ------ END OF SIDEBAR ------ */
-
 /* ----  HOME PAGE CONTENT  ---- */
 .content {
     margin-left: 200px;
+}
+
+/* WAVING HAND ICON */
+.material-symbols-outlined {
+    font-size: 3.2rem;
+    background-color: #fff;
 }
 
 /* TARGETING TEXT THAT SHOULD BE ITALIC */
@@ -91,9 +108,15 @@ body {
     font-weight: bold;
 }
 
+/* TARGETING TEXT THAT SHOULD BE UNDERLINED */
+.text-underline {
+    text-decoration: underline;
+    text-decoration-color: #6D2D3B;
+}
+
 /* ----  ABOUT SECTION  ---- */
 /* SOCIAL ICONS SECTION */
-#social-nav {
+#social-secondary-menu {
     align-self: center;
 }
 
@@ -124,11 +147,7 @@ body {
 /* ABOUT / INTRO DESCRIPTION */
 #about-intro {
     font-size: 2.1rem;
-}
-
-.underline {
-     text-decoration: underline;
-     text-decoration-color: #6D2D3B;
+    background-color: #fff;
 }
 
 /* ABOUT / INTRO DESCRIPTION + IMG */
@@ -186,7 +205,7 @@ body {
 /* GOALS NUMBERS */
 .goal-numbers {
     font-size: 3rem;
-    color: #DCC6CB;
+    color: #863647;
     margin: -1rem 0;
 }
 
@@ -248,6 +267,7 @@ body {
 /* TOP POSTS AND MILESTONE TITLES */
 .aside-titles {
     font-size: 2.1rem;
+    color: #6D2D3B;
 }
 
 /* TOP POSTS DIVS*/
@@ -356,18 +376,19 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 3px 3px 2px #DCC6CB;
+    background-color: #fff;
+    color: #0A0A0A;
 }
 
 /* POST CARDS TITLES */
 .card-title {
-    color: #6D2D3B;
     order: 2;
 }
 
 /* POST CARDS DESCRIPTIONS */
 .card-desc {
     text-align: center;
-    color: #6D2D3B;
+    color: #0A0A0A;
     font-size: 1.8rem;
     padding: 1rem;
     order: 3;
@@ -407,27 +428,27 @@ body {
 
 /* ACCESSING EACH INDIVIDUAL CARD */ 
 #day-1 { 
-    grid-area: 1 / 1 / 3 / 3; 
+    grid-area: 1 / 1 / 3 / 3;
 }
 
 #day-2 { 
-    grid-area: 1 / 3 / 2 / 5; 
+    grid-area: 1 / 3 / 2 / 5;
 }
 
 #day-3 { 
-    grid-area: 2 / 3 / 3 / 5; 
+    grid-area: 2 / 3 / 3 / 5;
 }
 
 #day-4 { 
-    grid-area: 1 / 5 / 2 / 6; 
+    grid-area: 1 / 5 / 2 / 6;
 }
 
 #day-5 { 
-    grid-area: 1 / 6 / 2 / 7; 
+    grid-area: 1 / 6 / 2 / 7;
 }
 
 #day-6 { 
-    grid-area: 2 / 5 / 3 / 6; 
+    grid-area: 2 / 5 / 3 / 6;
 }
 
 #day-7 { 
@@ -455,7 +476,7 @@ body {
 }
 
 #day-13 { 
-    grid-area: 2 / 3 / 3 / 5; 
+    grid-area: 2 / 3 / 3 / 5;
 }
 
 #day-14 { 
@@ -476,7 +497,7 @@ body {
 }
 /* ---- END OF FOOTER ---- */
 
-/*  ------ ALL MEDIA QUERIES ------ */
+/*  ------ MEDIA QUERIES FOR MAIN INDEX ------ */
 /* ----  MEDIA QUERIES FOR LARGE SCREENS / DESKTOPS ---- */
 @media screen and (min-width: 1024px) {
     /* ABOUT SECTION */
@@ -487,7 +508,7 @@ body {
     }
 
     /* SOCIAL ICONS SECTION */
-    #social-nav {
+    #social-secondary-menu {
         grid-area: 1 / 5 / 2 / 6;
     }
 
@@ -521,7 +542,7 @@ body {
     }
 
     /* QUICK NAV CONTAINER */
-    #quick-nav {
+    #quick-container {
         grid-area: 2 / 5 / 3 / 6;
     }
 
@@ -551,7 +572,7 @@ body {
 /* ----  MEDIA QUERIES FOR MEDIUM SCREENS / TABLETS ---- */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     /* MAIN NAV CONTAINER */
-    .main-nav {
+    .main-nav { 
         width: 100%;
         height: auto;
         position: relative;
@@ -583,12 +604,28 @@ body {
     #milestone-container {
         margin-top: 3rem;
     }
+
+    /* WEEK ONE'S POSTS CARDS */ 
+    #week-one {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 100%;
+    }
+
+    /* WEEK TWO'S POSTS CARDS */ 
+    #week-two {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 100%;
+    }
 }
 
 /* ----  MEDIA QUERIES FOR SMALL SCREENS / MOBILE ---- */
 @media screen and (min-width: 320px) and (max-width: 767px) {
     /* MAIN NAV CONTAINER */
-    .main-nav {
+    .main-nav { 
         width: 100%;
         height: auto;
         position: relative;
